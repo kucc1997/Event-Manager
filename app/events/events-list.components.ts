@@ -5,7 +5,8 @@ import { Component } from '@angular/core'
     template:`
     <div>
         <event-thumbnail #thumbnail [event]='event1'></event-thumbnail>
-                <button class="btn bnt-primary" (click) ="thumbnail.logFoo()">Click Me..! </button>
+        <h2>{{thumbnail.someProperty}}</h2>
+        <button class="btn bnt-primary" (click) ="thumbnail.logFoo()">Click Me..! </button>
     </div>
     `
 })    
