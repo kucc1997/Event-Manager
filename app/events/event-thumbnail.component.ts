@@ -17,9 +17,7 @@ import { Component, Input } from '@angular/core'
         </div>
     </div>
     `,
-    styles:[`
-    .pad-left {margin-left:40px;}
-    `]
+    styleUrls:['styles.css']
 })
 
 export class EventThumbnailComponent{
