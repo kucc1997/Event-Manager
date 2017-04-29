@@ -4,7 +4,8 @@ import { Component } from '@angular/core'
     selector: 'events-list',
     template:`
     <div>
-        <event-thumbnail (eventClick)='handleEventClicked($event)'  [event]='event1'></event-thumbnail>
+        <event-thumbnail #thumbnail [event]='event1'></event-thumbnail>
+                <button class="btn bnt-primary" (click) ="thumbnail.logFoo()">Click Me..! </button>
     </div>
     `
 })    
@@ -22,9 +23,5 @@ export class EventslistComponent{
             city:'Banepa',
             country:'Nepal'
         }
-    }
-
-    handleEventClicked(data){
-        console.log('received:', data)
     }
 }
