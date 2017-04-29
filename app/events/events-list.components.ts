@@ -4,8 +4,12 @@ import { Component } from '@angular/core'
     selector: 'events-list',
     template:`
     <div>
-        <event-thumbnail *ngFor="let event of events" [event]='event'></event-thumbnail>
-        
+    <h1> Upcoming Angualr2 Conferences</h1>
+        <div class="row">
+            <div class="col-md-5" *ngFor="let event of events">
+                <event-thumbnail  [event]='event'></event-thumbnail>
+            </div>
+        </div>    
     </div>
     `
 })    

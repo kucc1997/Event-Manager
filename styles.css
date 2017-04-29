@@ -40,4 +40,7 @@ button {
     .well div {
       color: lightsteelblue;
     }
+
+    .thumbnail {min-height:210px;}
+
     
