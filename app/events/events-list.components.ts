@@ -4,9 +4,8 @@ import { Component } from '@angular/core'
     selector: 'events-list',
     template:`
     <div>
-        <event-thumbnail #thumbnail [event]='event1'></event-thumbnail>
-        <h2>{{thumbnail.someProperty}}</h2>
-        <button class="btn bnt-primary" (click) ="thumbnail.logFoo()">Click Me..! </button>
+        <event-thumbnail [event]='event1'></event-thumbnail>
+        
     </div>
     `
 })    
