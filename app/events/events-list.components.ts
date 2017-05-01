@@ -20,7 +20,7 @@ export class EventslistComponent{
       id: 1,
       name: 'Angular Connect',
       date: '9/26/2036',
-      time: '10:00 am',
+      time: '8:00 am',
       price: 599.99,
       imageUrl: '/app/assets/images/angularconnect-shield.png',
       location: {
@@ -98,7 +98,7 @@ export class EventslistComponent{
       id: 2,
       name: 'ng-nl',
       date: '4/15/2037',
-      time: '9:00 am',
+      time: '08:00 am',
       price: 950.00,
       imageUrl: '/app/assets/images/ng-nl.png',
       OnlineUrl:'https://example.com',
@@ -242,7 +242,7 @@ export class EventslistComponent{
       id: 4,
       name: 'UN Angular Summit',
       date: '6/10/2037',
-      time: '08:00 am',
+      time: '8:00 am',
       price: 800.00,
       imageUrl: '/app/assets/images/basic-shield.png',
       location: {
