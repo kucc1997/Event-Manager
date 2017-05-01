@@ -242,7 +242,7 @@ export class EventslistComponent{
       id: 4,
       name: 'UN Angular Summit',
       date: '6/10/2037',
-      time: '8:00 am',
+      time: '08:00 am',
       price: 800.00,
       imageUrl: '/app/assets/images/basic-shield.png',
       location: {
