@@ -40,8 +40,13 @@ export class EventThumbnailComponent{
     }
 
     getStartLocationClass(){
-        const isStartLocation = this.event && this.event.location.country =='USA'
-        return {green:isStartLocation, bold: isStartLocation}
+        // returning string 
+        if( this.event && this.event.location.country=='USA')
+            return ['green', 'bold']
+        return []
+        // return classes with space separated
+        // const isStartLocation = this.event && this.event.location.country =='USA'
+        // return {green:isStartLocation, bold: isStartLocation}
 
     }
 }
