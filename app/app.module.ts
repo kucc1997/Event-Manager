@@ -17,7 +17,6 @@ import { EventService } from './events/shared/event.service'
 		],
 		providers: [EventService],
 		bootstrap : [EventsAppComponent]
-
 })
 export class AppModule{
 

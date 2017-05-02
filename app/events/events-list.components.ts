@@ -1,5 +1,8 @@
+
+
 import { Component, OnInit } from '@angular/core'
 import { EventService } from './shared/event.service'
+
 @Component({
     selector: 'events-list',
     template:`
@@ -7,7 +10,7 @@ import { EventService } from './shared/event.service'
     <h1> Upcoming Angualr2 Conferences</h1>
         <div class="row">
             <div class="col-md-5" *ngFor="let event of events">
-                <event-thumbnail  [event]='event'></event-thumbnail>
+                <event-thumbnail (click) ="handleThumbnailClick(event.name)"  [event]="event"></event-thumbnail>
             </div>
         </div>    
     </div>
@@ -15,7 +18,7 @@ import { EventService } from './shared/event.service'
 })    
 
 export class EventslistComponent implements OnInit{
-  events:any[]
+  events:any
 
   constructor(private eventService: EventService) {
     
@@ -25,5 +28,11 @@ export class EventslistComponent implements OnInit{
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
     this.events = this.eventService.getEvents()
+  }
+
+ 
+  handleThumbnailClick(eventName) {
+ const test= toastr
+  return   toastr.success(eventName)
   }
 }
