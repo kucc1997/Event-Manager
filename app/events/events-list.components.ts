@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core'
 import { EventService } from './shared/event.service'
 import { ToastrService } from '../common/toastr.service'
 @Component({
-    selector: 'events-list',
+    // selector: 'events-list',
     template:`
     <div>
     <h1> Upcoming Angualr2 Conferences</h1>
