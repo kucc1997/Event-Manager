@@ -28,9 +28,20 @@ import { EventRouteActivator } from './events/event-details/event-route-activato
 			CreateEventComponent,
 			Error404Component
 		],
-		providers: [EventService, ToastrService, EventRouteActivator],
+		providers: [
+			{
+				provide : 'canDeactivateCreateEvent',
+				useValue: checkDirtyState
+			},
+			EventService,
+			ToastrService,
+			EventRouteActivator,
+			
+			],
 		bootstrap : [EventsAppComponent]
 })
-export class AppModule{
+export class AppModule{}
 
-}
+	function checkDirtyState() {
+		return false
+	}
