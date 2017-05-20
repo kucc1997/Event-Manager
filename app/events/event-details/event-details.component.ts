@@ -4,10 +4,10 @@ import { ActivatedRoute } from '@angular/router'
 import { IEvent } from "../shared/index";
 @Component({
     templateUrl:
-    '/app/events/event-details/event-details.component.html',
+        '/app/events/event-details/event-details.component.html',
     styles:[`
-    .container { padding-left: 20px; padding-right:20px;}
-    .event-image {height:100px;}
+        .container { padding-left: 20px; padding-right:20px;}
+        .event-image {height:100px;}
     `
     ]
 

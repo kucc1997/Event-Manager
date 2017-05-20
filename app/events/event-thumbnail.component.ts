@@ -18,7 +18,7 @@ import { IEvent } from './shared/index'
                 <span class="pad-left"> {{event?.location?.city}}, {{event.location?.country}}</span>
             </div>
             <div [hidden]="!event?.OnlineUrl">
-                OnlineUrl: {{event.OnlineUrl}}</div>
+                OnlineUrl: {{event.onlineUrl}}</div>
         </div>
     </div>
     `,
