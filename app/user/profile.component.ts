@@ -42,11 +42,11 @@ export class ProfileComponent implements OnInit {
 }
 
   validateFirstName() {
-   return this.firstName.invalid || this.firstName.untouched    
+   return this.firstName.valid || this.firstName.untouched    
   }
 
   validateLastName() {
-   return this.lastName.invalid || this.lastName.untouched    
+   return this.lastName.valid || this.lastName.untouched    
   }
 
 cancel() {
