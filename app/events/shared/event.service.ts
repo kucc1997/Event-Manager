@@ -106,11 +106,11 @@ const EVENTS:IEvent[] = [
       price: 950.00,
       imageUrl: '/app/assets/images/ng-nl.png',
       onlineUrl: 'https://example.com',
-    //   location: {
-    //     address: 'The NG-NL Convention Center & Scuba Shop',
-    //     city: 'Amsterdam',
-    //     country: 'Netherlands'
-    //   }
+      location: {
+        address: 'The NG-NL Convention Center & Scuba Shop',
+        city: 'Amsterdam',
+        country: 'Netherlands'
+      },
     
       sessions: [
         {
