@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { FormControl, FormGroup, Validators } from '@angular/forms'
-import {ISession } from '../shared/index'
+import {ISession, restrictedWords } from '../shared/index'
 
 @Component ({
     templateUrl: 'app/events/event-details/create-session.component.html',
@@ -26,7 +26,7 @@ export class CreateSessionComponent implements OnInit {
         this.presenter = new FormControl('', Validators.required)
         this.duration = new FormControl('', Validators.required)
         this.level = new FormControl('', Validators.required)
-        this.abstract = new FormControl('', [Validators.required, Validators.maxLength(40), this.restrictedWords] )
+        this.abstract = new FormControl('', [Validators.required, Validators.maxLength(20), this.restrictedWords(['foo', 'bar','much'])] )
     
     this.newSessionForm = new FormGroup({
         name: this.name,
@@ -35,16 +35,6 @@ export class CreateSessionComponent implements OnInit {
         level: this.level,
         abstract: this.abstract
     })
-}
-
-//Creating a custom validator. Custom validator is nothing but a function.
-//Below the function restrictedWOrds takes FormControl as a parameter,
-// and returns basic javascript object
-private restrictedWords(control:FormControl):{[key: string]: any}
-    {
-        return control.value.includes('foo')
-        ? {'restrictedWOrds':'foo'}
-        : null
 }
 
 saveSession(formValues) {
