@@ -22,4 +22,10 @@
       </address>
     </div>
   </div>
+
+  <hr>
+  <!--This means we are binding  session property of this session-list component to the session array on this event object. -->
+  <!--Session-list expects a sessions property on this session list components. -->
+  <session-list [sessions]="events?.sessions"></session-list>
+
 </div>

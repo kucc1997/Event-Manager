@@ -13,7 +13,7 @@ import { IEvent } from "./shared/index";
     <h1> Upcoming Angualr2 Conferences</h1>
         <div class="row">
             <div class="col-md-5" *ngFor="let event of events">
-                <event-thumbnail (click) ="handleThumbnailClick(event.name)"  [event]="event"></event-thumbnail>
+                <event-thumbnail (click) ="handleThumbnailClick(event.name)" [event]="event"></event-thumbnail>
             </div>
         </div>    
     </div>
@@ -22,10 +22,8 @@ import { IEvent } from "./shared/index";
 
 export class EventslistComponent implements OnInit{
   events:IEvent[]
-
   constructor(private eventService: EventService,
               private toastr: ToastrService, private route:ActivatedRoute) {
-    
   }
 
   handleThumbnailClick(eventName) {
@@ -36,9 +34,5 @@ export class EventslistComponent implements OnInit{
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
     this.events = this.route.snapshot.data['events']
-
   }
-
- 
-  
 }
