@@ -8,7 +8,7 @@
     "tsc:w": "tsc -w"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sanjog Sigdel",
   "licenses": [
     {
       "type": "MIT",
@@ -41,5 +41,8 @@
     "@types/core-js": "0.9.36",
     "@types/node": "~6.0.46"
   },
-  "repository": {}
+  "repository": {},
+  "description": "ReWriting Blog on Angular",
+  "main": "systemjs.config.js",
+  "license": "Apache-2.0"
 }
