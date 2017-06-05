@@ -28,14 +28,15 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 	],
 	declarations: [
 			CreateEventComponent,	
-			CreateSessionComponent,
 			EventsAppComponent,
 			EventslistComponent,
 			EventThumbnailComponent,
 			EventDetailsComponent,
 			Error404Component,
 			NavBarComponent,
+			CreateSessionComponent,
 			SessionListComponent
+
 		],
 		providers: [
 			AuthService,
