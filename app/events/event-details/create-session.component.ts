@@ -1,4 +1,5 @@
-import { Component, OnInit, Ouptut, EventEmitter } from '@angular/core'
+import { Component, OnInit, EventEmitter } from '@angular/core'
+import { Output } from '@angular/core'
 import { FormControl, FormGroup, Validators } from '@angular/forms'
 import {ISession, restrictedWords } from '../shared/index'
 
