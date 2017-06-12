@@ -11,8 +11,6 @@ import { IEvent, ISession } from "../shared/index";
         a {cursor:pointer}
     `
     ]
-
-
 })
 
 export class EventDetailsComponent{
@@ -20,7 +18,6 @@ export class EventDetailsComponent{
    addMode:boolean
    constructor(private eventService:EventService,
                 private route: ActivatedRoute) {
-
    }
 
     ngOnInit() {
@@ -39,6 +36,9 @@ export class EventDetailsComponent{
         this.event.sessions.push(session)
         this.eventService.updateEvent(this.event)
         this.addMode = false
+    }
 
+    cancelAddSession() {
+        this.addMode = false
     }
 }
