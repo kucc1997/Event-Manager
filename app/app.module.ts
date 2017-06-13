@@ -11,7 +11,8 @@ import {
 	EventDetailsComponent,
 	EventListResolver,
 	EventRouteActivator,
-    SessionListComponent
+    SessionListComponent,
+	DurationPipe
 } from './events/index'
 import { EventsAppComponent } from './events-app.component'
 import { NavBarComponent } from './nav/navbar.components'
@@ -37,8 +38,8 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 			Error404Component,
 			NavBarComponent,
 			CreateSessionComponent,
-			SessionListComponent
-
+			SessionListComponent,
+			DurationPipe
 		],
 		providers: [
 			AuthService,
