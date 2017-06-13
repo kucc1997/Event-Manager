@@ -7,11 +7,10 @@ import { Component, Input } from '@angular/core'
             <ng-content select="[well-title]"></ng-content>
         </h4>
         <ng-content *ngIf="visible" select="[well-body]"></ng-content>
-        </div>
+    </div>
     `
 })
 export class CollapsibleWellComponent {
-    
     visible: boolean = true
 
     toggleContent() {
