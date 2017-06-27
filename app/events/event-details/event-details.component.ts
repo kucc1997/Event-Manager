@@ -17,7 +17,7 @@ export class EventDetailsComponent{
    event:IEvent
    addMode:boolean
    filterBy: string = 'all'
-   
+   soryBy: string = 'votes'
    constructor(private eventService:EventService,
                 private route: ActivatedRoute) {
    }
