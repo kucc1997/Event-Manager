@@ -1,6 +1,7 @@
 import { Component } from '@angular/core'
 import { AuthService } from '../user/auth.service'
-@Component ({
+import { ISession } from "../events/index";
+@Component({
     selector: 'nav-bar',
     templateUrl: 'app/nav/navbar.component.html',
     styles:[`
@@ -12,8 +13,13 @@ import { AuthService } from '../user/auth.service'
 })
 
 export class NavBarComponent{
+    searchTerm: string= ""
+    founcSessions: ISession[]
     constructor(private auth: AuthService){
         
+    }
+    searchSession(searchTerm){
+
     }
 
 }
