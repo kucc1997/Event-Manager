@@ -1,2 +1,5 @@
 
-[![Build Status](https://travis-ci.org/algosig/ReWrite.svg?branch=master)](https://travis-ci.org/algosig/ReWrite)
+# ReWrite
+
+Build Status: [![CircleCI](https://circleci.com/gh/algosig/ReWrite.svg?style=svg)](https://circleci.com/gh/algosig/ReWrite)powered by <a href="https://circleci.com/"> CircleCI </a> 
+
